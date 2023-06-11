@@ -1,4 +1,4 @@
-const internModel = require("../models/internModel");
+const internModel = require("../models/InternModel");
 const collegeModel = require("../models/collegeModel");
 const {
   isValid,
@@ -8,7 +8,7 @@ const {
 } = require("../validation/validator");
 
 //<----------------------------------create Intern--------------------------------> //
-//hello world
+
 const createIntern = async (req, res) => {
   try {
     let data = req.body;
@@ -109,4 +109,4 @@ const createIntern = async (req, res) => {
 };
 
 module.exports.createIntern = createIntern;
-//rename this
+

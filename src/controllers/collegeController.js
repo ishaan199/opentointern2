@@ -1,5 +1,5 @@
 const collegeModel = require("../models/collegeModel");
-const internModel = require('../models/internModel');
+const internModel = require('../models/InternModel');
 const { isValid, isValidName, isValidRequest, isValidUrl } = require('../validation/validator')
 
 
