@@ -32,3 +32,4 @@ const internSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("internList", internSchema);
+//rename this 

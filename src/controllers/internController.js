@@ -18,12 +18,10 @@ const createIntern = async (req, res) => {
     data["email"] = data["email"].toLowerCase();
 
     if (Object.keys(data).length == 0) {
-      return res
-        .status(400)
-        .send({
-          status: false,
-          message: "Data is required for creating Intern Details",
-        });
+      return res.status(400).send({
+        status: false,
+        message: "Data is required for creating Intern Details",
+      });
     }
 
     if (!name) {
@@ -33,12 +31,10 @@ const createIntern = async (req, res) => {
     }
 
     if (!isValid(name.trim()) || !isValidName(name.trim())) {
-      return res
-        .status(400)
-        .send({
-          status: false,
-          message: "name is required or its should contain aplhabets",
-        });
+      return res.status(400).send({
+        status: false,
+        message: "name is required or its should contain aplhabets",
+      });
     }
 
     if (!email) {
@@ -113,3 +109,4 @@ const createIntern = async (req, res) => {
 };
 
 module.exports.createIntern = createIntern;
+//rename this
